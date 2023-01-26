@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "CheriRegular";
+  src: local("CheriRegular"),
+    url("../fonts/cheri/CHERI___.TTF") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "ShakyRegular";
+  src: local("ShakyRegular"),
+    url("../fonts/shaky/Shaky-Hand-Some-Comic.otf") format("opentype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "BrownBagLunch";
+  src: local("BrownBagLunch"),
+    url("../fonts/BrownBagLunch/BrownBagLunch.ttf") format("truetype");
+  font-weight: normal;
+}
+
+:root {
+  --dark-purple: #5f6390;
+  --light-purple: #b1b4de;
+  --red: #f10407;
+  --light-blue: #c3dcff;
+  --light-yellow: #fffca4;
+}
+
+@import './reset.css';
+@import './navbar.css';
+@import './modal.css';
+@import './home_dog.css';
+@import './pet.css';
+@import './pet_show.css';
+@import './search.css';
+@import './user.css';
+@import './home_page_message.css';
+@import './footer.css';
+
+
+body {
+  background-color: var(--light-purple);
+}
+
+.full-page {
+  height: 100vh;
+}

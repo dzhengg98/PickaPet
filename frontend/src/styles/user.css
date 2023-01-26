@@ -1,0 +1,280 @@
+.user-page-parent{
+  height: inherit;
+  padding: 25px;
+}
+
+.user-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 80%;
+}
+
+.user-page * {
+  font-family: ShakyRegular;
+  color: var(--dark-purple);
+  font-size: 22px;
+}
+
+.user-info {
+  background-color: var(--light-blue);
+  border: 5px solid var(--dark-purple);
+  border-radius: 15px;
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* overflow: scroll; */
+}
+
+.user-info-title {
+  display: flex;
+  justify-content: center;
+  font-family: CheriRegular;
+  font-size: 30px;
+  border: 1px solid var(--light-purple);
+  background-color: var(--light-purple);
+  border-radius: 50px;
+  margin: 20px 20% 0 20%;
+  padding: 10px 0 10px 0;
+}
+
+.user-details {
+  margin: 25px 25px 10px 25px;
+  border: 3px solid var(--dark-purple);
+  border-radius: 5px;
+  padding: 15px 25px;
+  background-color: var(--light-yellow);
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.user-detail {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-detail p:last-child {
+  background-color: var(--light-purple);
+  border-radius: 10px;
+  padding: 10px 10px 10px 10px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height:20px;
+}
+
+.user-edit-btn {
+  display: flex;
+  justify-content: center;
+  margin: 0 20%;
+  margin-top: 10px;
+  border: 3px solid var(--dark-purple);
+  background-color: var(--light-purple);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.user-edit-btn > * {
+  margin-top: 5px;
+  text-decoration: none;
+  color: white;
+}
+
+.user-edit-btn:hover {
+  transition: .5s;
+    transform: scale(1.05);
+}
+
+.user-pets {
+  background-color: var(--light-blue);
+  border: 5px solid var(--dark-purple);
+  border-radius: 15px;
+  width: 60%;
+}
+
+.pets-list-title {
+  display: flex;
+  justify-content: center;
+  font-family: CheriRegular;
+  font-size: 30px;
+  border: 1px solid var(--light-purple);
+  background-color: var(--light-purple);
+  border-radius: 50px;
+  margin: 0 30% 0 30%;
+  padding: 10px 0 10px 0;
+}
+
+.pets-list {
+  margin: 20px 25px;
+}
+
+.pet-item {
+  margin: 10px;
+  border: 3px solid var(--dark-purple);
+  border-radius: 10px;
+  padding: 15px;
+  background-color: var(--light-yellow);
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+}
+
+.pet-item:hover {
+  transition: .2s;
+  transform: scale(1.02);
+  border: 3px solid var(--light-purple);
+}
+
+.pet-thumbnail {
+  height: 85px;
+  width: 85px;
+  margin-right: 25px;
+}
+
+.pet-thumbnail img{
+  height: 85px;
+  width: 85px;
+  border-radius: 10px;
+}
+
+.pet-item-info {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--light-purple);
+  padding: 5px 15px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.pet-item-info *{
+  color: white;
+  font-size: 20px;
+}
+
+.edit-user-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--light-blue);
+  border: 5px solid var(--dark-purple);
+  border-radius: 10px;
+  margin: 50px 30% 0 30%;
+  font-family: ShakyRegular;
+  color: var(--dark-purple);
+  width: 600px;
+}
+
+.edit-user-form h1{
+  margin: 25px;
+  background-color: var(--dark-purple);
+  padding: 15px;
+  border-radius: 50px;
+  font-family: CheriRegular;
+  font-size: 30px;
+  color: var(--light-yellow);
+}
+
+.edit-user-form-input {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+}
+
+.edit-user-form-input > * {
+  margin: 15px 0 15px 0;
+  font-size: 24px;
+}
+
+.edit-user-form-input label {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.user-form-text-box {
+  border: none;
+  background-color: var(--light-purple);
+  padding: 10px;
+  font-family: ShakyRegular;
+  font-size: 20px;
+  box-shadow: 2px 2px 5px inset var(--dark-purple);
+}
+
+.edit-user-submit-btn {
+  background-color: var(--light-yellow);
+  border: 2px solid var(--dark-purple);
+  border-radius: 5px;
+  padding: 10px 40px 10px 40px;
+  font-size: 24px;
+  color: var(--dark-purple);
+  font-family: ShakyRegular;
+  cursor: pointer;
+}
+
+.edit-user-submit-btn:hover {
+  transition: .5s;
+  transform: scale(1.05);
+  border-color: var(--light-purple);
+}
+
+.no-pets {
+  font-size: 30px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .user-page-parent {
+    display: flex;
+    width: 700px;
+    height: 100%;
+    margin-left: 100px;
+  }
+  .user-page {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    gap: 20px;
+  }
+  .user-info {
+    width: 100%;
+  }
+  .user-pets {
+    width: 100%;
+  }
+  .edit-user-form {
+    margin-left: 140px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .user-page-parent {
+    display: flex;
+    width: 700px;
+    margin-left: 70px;
+    height: 100%;
+  }
+  .user-page {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    gap: 20px;
+  }
+  .user-info {
+    width: 100%;
+  }
+  .user-pets {
+    width: 100%;
+  }
+  .edit-user-form {
+    margin-left: 140px;
+  }
+}

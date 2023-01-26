@@ -1,0 +1,470 @@
+.home-welcome-container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+  top: -180px;
+}
+
+.home-message-container {
+  position: relative;
+  left: 330px;
+}
+
+.homepage-image-container {
+  position: relative;
+  left: 130px;
+}
+
+.home-title-message {
+  font-family: ShakyRegular;
+  font-size: 60px;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 2;
+  color: var(--dark-purple);
+}
+
+.animated-text {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.picka-pet-about,
+.picka-pet-cat,
+.picka-pet-dog,
+.picka-pet-pet,
+.picka-pet-interact {
+  font-family: ShakyRegular;
+  font-size: 32px;
+}
+
+.picka-pet-interact {
+  width: 460px;
+}
+
+.picka-pet-about {
+  text-align: center;
+  color: var(--light-blue);
+  position: absolute;
+  opacity: 0;
+  animation: 30s linear text1 infinite;
+}
+
+.picka-pet-pet {
+  text-align: center;
+  color: var(--light-blue);
+  position: absolute;
+  opacity: 0;
+  animation: 30s linear text2 infinite;
+}
+
+.picka-pet-dog {
+  text-align: center;
+  color: var(--light-blue);
+  position: absolute;
+  opacity: 0;
+  animation: 30s linear text3 infinite;
+}
+
+.picka-pet-cat {
+  text-align: center;
+  color: var(--light-blue);
+  position: absolute;
+  opacity: 0;
+  animation: 30s linear text4 infinite;
+}
+
+.picka-pet-interact {
+  text-align: center;
+  color: var(--light-blue);
+  position: absolute;
+  opacity: 0;
+  animation: 30s linear text5 infinite;
+}
+
+@keyframes text1 {
+  0% {
+    opacity: 0;
+    transform: translateX(-20%);
+  }
+  3% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  9% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  19% {
+    opacity: 0;
+    transform: translateX(20%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(20%);
+  }
+}
+
+@keyframes text2 {
+  19% {
+    opacity: 0;
+    transform: translateX(-20%);
+  }
+  22% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  28% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  38% {
+    opacity: 0;
+    tranform: translateX(40%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(40%);
+  }
+}
+
+@keyframes text3 {
+  38% {
+    opacity: 0;
+    transform: translateX(-20%);
+  }
+  41% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  47% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  57% {
+    opacity: 0;
+    tranform: translateX(40%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(40%);
+  }
+}
+
+@keyframes text4 {
+  57% {
+    opacity: 0;
+    transform: translateX(-20%);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  66% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  76% {
+    opacity: 0;
+    tranform: translateX(40%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(40%);
+  }
+}
+
+@keyframes text5 {
+  76% {
+    opacity: 0;
+    transform: translateX(-20%);
+  }
+  79% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  85% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  95% {
+    opacity: 0;
+    tranform: translateX(40%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(40%);
+  }
+}
+
+.homepage-image-container {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.dogs,
+.cats {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  left: 200px;
+}
+
+.homepage-image {
+  height: 140px;
+  margin: 30px 15px;
+}
+
+.husky, .shiba, .corgi, .dalmatian,
+.cockerspaniel, .doberman, .germanshepherd, .goldenretriver,
+.britishshorthair, .kinkalow, .orangetabby, .cheetoh,
+.tonkinese, .chantillytiffany, .exoticshorthair, .exoticcat {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: ShakyRegular;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 3px double var(--dark-purple);
+  background-color: rgba(254, 254, 254, 0.95);
+  margin-right: 50px;
+  margin-bottom: 20px;
+}
+
+.dogs-1 {
+  display: flex;
+  position: absolute;
+  opacity: 0;
+  animation: 32s linear dogs1 infinite;
+}
+
+.dogs-2 {
+  display: flex;
+  position: absolute;
+  opacity: 0;
+  animation: 32s linear dogs2 infinite;
+}
+
+.cats-1 {
+  display: flex;
+  position: absolute;
+  opacity: 0;
+  animation: 32s linear cats1 infinite;
+}
+
+.cats-2 {
+  display: flex;
+  position: absolute;
+  opacity: 0;
+  animation: 32s linear cats2 infinite;
+}
+
+@keyframes dogs1 {
+  0% {
+    opacity: 0;
+    transform: translateX(-10%);
+  }
+  8% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  16% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  24% {
+    opacity: 0;
+    transform: translateX(10%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(10%);
+  }
+}
+
+
+@keyframes dogs2 {
+  24% {
+    opacity: 0;
+    transform: translateX(-10%);
+  }
+  32% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  40% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  48% {
+    opacity: 0;
+    transform: translateX(10%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(10%);
+  }
+}
+
+@keyframes cats1 {
+  48% {
+    opacity: 0;
+    transform: translateX(-10%);
+  }
+  56% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  64% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  72% {
+    opacity: 0;
+    transform: translateX(10%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(10%);
+  }
+}
+
+@keyframes cats2 {
+  72% {
+    opacity: 0;
+    transform: translateX(-10%);
+  }
+  80% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  88% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  96% {
+    opacity: 0;
+    transform: translateX(10%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(10%);
+  }
+}
+
+.paw1 {
+  position: relative;
+  left: 230px;
+  top: -120px;
+  z-index: 1;
+  opacity: 0;
+  animation: 8s linear paw1 infinite;
+}
+
+.paw2 {
+  position: relative;
+  left: 330px;
+  top: -160px;
+  z-index: 1;
+  transform: rotate(-80deg);
+  opacity: 0;
+  animation: 8s linear paw2 infinite;
+}
+
+.paw3 {
+  position: relative;
+  left: 430px;
+  top: -120px;
+  z-index: 1;
+  transform: rotate(-80deg);
+  opacity: 0;
+  animation: 8s linear paw3 infinite;
+}
+
+.block {
+  height: 450px;
+}
+
+@keyframes paw1 {
+  0% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  69% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes paw2 {
+  0% {
+    opacity: 0;
+  }
+  35% {
+    opacity: 1;
+  }
+  69% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes paw3 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  69% {
+    opacity: 1;
+  }
+  84% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* i pad air, i pad mini, surface pro 7, surface duo */
+@media screen and (max-width: 1024px) {
+  .home-welcome-container {
+    top: 175px;
+    left: -320px;
+  }
+  .dogs,
+  .cats {
+    top: 100px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .home-welcome-container {
+    top: 140px;
+    left: -100px;
+  }
+  .dogs,
+  .cats {
+    top: 80px;
+  }
+}
